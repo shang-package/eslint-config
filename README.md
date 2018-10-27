@@ -23,7 +23,7 @@ module.exports = {
 ### `npm install`
 
 ```bash
-npm install --save-dev eslint babel-eslint eslint-plugin-typescript eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config
+npm install --save-dev eslint babel-eslint eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config
 ```
 
 ### config `.eslintrc.js`
