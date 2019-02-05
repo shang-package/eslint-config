@@ -2,13 +2,13 @@
 
 ## Typescript rule
 
-### `npm install`
+### ts `npm install`
 
 ```bash
-npm install --save-dev eslint typescript typescript-eslint-parser babel-eslint eslint-plugin-typescript eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config
+npm install --save-dev eslint typescript eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config @typescript-eslint/eslint-plugin
 ```
 
-### config `.eslintrc.js`
+### ts config `.eslintrc.js`
 
 ```js
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
 ### `npm install`
 
 ```bash
-npm install --save-dev eslint babel-eslint eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config
+npm install --save-dev eslint eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config
 ```
 
 ### config `.eslintrc.js`
