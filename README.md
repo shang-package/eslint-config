@@ -1,37 +1,29 @@
 # shang personal eslint config
 
-## Typescript rule
-
-### ts `npm install`
+## `npm install`
 
 ```bash
-npm install --save-dev eslint typescript eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config @typescript-eslint/eslint-plugin
+npx install-peerdeps --dev @s4p/eslint-config
 ```
 
-### ts config `.eslintrc.js`
+## config `.eslintrc.js`
 
 ```js
 module.exports = {
-  globals: {},
-  extends: ['@s4p/eslint-config'],
-  rules: {},
-};
-```
-
-## standard rule
-
-### `npm install`
-
-```bash
-npm install --save-dev eslint eslint-config-airbnb-base eslint-plugin-import @s4p/eslint-config
-```
-
-### config `.eslintrc.js`
-
-```js
-module.exports = {
-  globals: {},
-  extends: ['@s4p/eslint-config/rule-configs/index'],
-  rules: {},
+  extends: ["@s4p/eslint-config"],
+  env: {
+    // 你的环境变量（包含多个预定义的全局变量）
+    // browser: true,
+    // node: true,
+    // mocha: true,
+    // jest: true,
+    // jquery: true
+  },
+  globals: {
+    // 你的全局变量（设置为 false 表示它不允许被重新赋值）
+  },
+  rules: {
+    // 自定义你的规则
+  },
 };
 ```
