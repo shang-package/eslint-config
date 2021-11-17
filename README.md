@@ -3,7 +3,12 @@
 ## `npm install`
 
 ```bash
+# npm
 npx install-peerdeps --dev @s4p/eslint-config
+# or pnpm
+pnpx install-peerdeps -P --dev @s4p/eslint-config
+# or yarn
+npx install-peerdeps -Y --dev @s4p/eslint-config
 ```
 
 ## config `.eslintrc.js`
