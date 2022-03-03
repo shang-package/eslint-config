@@ -25,12 +25,15 @@ module.exports = {
         singleQuote: true,
         trailingComma: "all",
         bracketSpacing: true,
-        jsxBracketSameLine: false,
         arrowParens: "always",
         requirePragma: false,
         insertPragma: false,
       },
     ],
     "@typescript-eslint/no-parameter-properties": ["off"],
+    "@typescript-eslint/explicit-member-accessibility": [
+      "warn",
+      { overrides: { constructors: "no-public" } },
+    ],
   },
 };
